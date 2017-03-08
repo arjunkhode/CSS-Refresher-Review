@@ -14,7 +14,12 @@ Relative position creates a coordinate system for its child elements.
 </li>
 <li>
 Absolute position and fixed position removes the element from the normal flow. Each web-page has a default flow, which is like a set of rules. Like gravity affects a tower of building blocks, flow affects the building of HTML elements. Position relative makes an element like Clark Kent. It can defy the normal flow and move away from its original position, without disturbing the flow. Position relative does not push other elements. It just affects the z-index and causes overlap. Thus, it does not 'disturb the flow'.
-
+<li>
+Absolute position elements move within the coordinate system of their parent. If the parent does not have a coordinate system, the default coordinate system of the window is applied.
+</li>
+<li>
+Since position relative creates a coordinate system, its children can be position relative themselves, thereby creating a second coordinate system, or children with position absolute can move within the boundaries of the parent's coordinate system. The second case is more commonly used.
+</li>
 ```
 <style>
 .box{
