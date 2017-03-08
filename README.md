@@ -1,4 +1,5 @@
 # CSS-Refresher-Review
+My review of [Vasanth's CSS refresher](https://github.com/vasanthk/css-refresher-notes)
 
 1.Position
 
@@ -41,4 +42,8 @@ Absolute position elements move within the coordinate system of their parent. If
 </li>
 <li>
 Since position relative creates a coordinate system, its children can be position relative themselves thereby creating a second coordinate system, or children with position absolute can move within the boundaries of the parent's coordinate system. The second case is more commonly used.
+</li>
+<li>
+The most important point to keep in mind while using position absolute is that it removes the element from the flow of the page.
+It doesn't affect other elements and the other elements don't affect it.
 </li>
