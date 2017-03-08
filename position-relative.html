@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body{
+  margin:0;
+}
+.box{
+	display:inline-block;
+	height:50px;
+	width: 50px;
+}
+.one{
+	background: lightcoral;
+}
+.two{
+	background: mistyrose;
+}
+.three{
+	background:olive;
+	left:25px;
+	position:relative;
+}
+.four{
+	background: deepskyblue;
+}
+.five{
+	background:olive;
+	left:25px;
+	position:relative;
+}
+.six{
+	background: deepskyblue;
+	position: relative;
+}
+</style>
+
+<div class="box one"></div><!--
+--><div class="box two">
+</div>
+<br>
+Relative offset:
+<br>
+<div class="box three"></div><!--
+--><div class="box four">
+</div>
+relative box three gets higher z-index than static position box four.
+flow does not break.
+<br>
+<div class="box five"></div><!--
+--><div class="box six">
+</div>
+both position relative with one box offset. The latter relative element gets higher z-index.
+<br>
+In no case do overlapping elements push each other.
+
+</body>
+</html>
