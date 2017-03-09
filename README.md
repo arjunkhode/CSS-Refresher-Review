@@ -50,3 +50,15 @@ It doesn't affect other elements and the other elements don't affect it. It can 
 <li>
 Position fixed also removes the element from the flow. Like position absolute, position fixed can be used to stretch the element within the page. How fixed differs from absolute is that in position fixed, the parent is always the viewport and the coordinate system laid out is on top of the viewport. The top left corner of a position fixed element with top:0 and left:0, is the top left corner of the browser window
 </li>
+<li>
+[A good reference link not in Vasanth's refresher](http://blog.teamtreehouse.com/css-positioning)
+</li>
+
+2.Display
+<li>Default value is inline</li>
+<li>Some elements are block in nature while some are inline</li>
+<li>An inline element can't have height or width. It can have margin-top, margin-bottom, padding-top and padding-bottom but these will not make any changes, the values are just there for the sake of it, but they can come in handy if another child element inherits display from the current element.</li>
+<li>Block level elements begin on a new line, inline ones don't.
+<li>One example of a block element is 'div'. One example of an inline element is the anchor tag 'a'.</li>
+<li>Display none removes the element from the flow of the page. If you just want to make the element invisible but take up space, use visibility:hidden. Inversely, visibility:visible.</li>
+<li></li>

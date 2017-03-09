@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.one{
+	background:honeydew;
+	display:inline;
+	height:100px; /*CSS lint throws a warning: can't assign height to inline element*/
+	width:100px; /*Same warning*/
+	/**A display:inline element has a height and width
+		They just don't get applied to it **/
+}
+.two{
+	background:maroon;
+	display: block;
+	height:100%;
+	width:100%;
+	color: white;
+}
+</style>
+
+<div class="one">Hi I am inline!
+	<div class="two">
+		Hi I am a child of an inline element and I have height.
+	</div>
+</div>
+
+<script>
+//If inline element has a block child, its height and width still don't get applied to the block element.
+//display:inline renders height and width completely useless.
+</script>
+</body>
+</html>
