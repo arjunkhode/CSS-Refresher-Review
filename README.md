@@ -77,3 +77,5 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>Block level elements ignore vertical-align property.</li>
 <li>you can put any block element inside another block element. You can also put any inline element inside a block element, as well as any inline element inside any other inline element. But you cannot put a block element inside an inline element. [reference](https://www.impressivewebs.com/difference-block-inline-css/)</li>
 <li>Think of a display:inline-block element that has been rendered (or converted to an image) and then placed in the document inline.</li>
+<li>[Flexbox Notes](http://thesagittariusme.blogspot.com/search/label/flexbox)</li>
+<li>[Flexbox Examples](https://github.com/arjunkhode/Project-flexbox)</li>
