@@ -1,7 +1,7 @@
 # CSS-Refresher-Review
 My review of [Vasanth's CSS refresher](https://github.com/vasanthk/css-refresher-notes) with examples.
 
-1.Position
+#1.Position
 
 <ul>
 <li>
@@ -54,7 +54,7 @@ Position fixed also removes the element from the flow. Like position absolute, p
 [A good reference link not in Vasanth's refresher](http://blog.teamtreehouse.com/css-positioning)
 </li>
 
-2.Display
+#2.Display
 <li>Default value is inline</li>
 <li>Some elements are block in nature while some are inline</li>
 <li>An inline element can't use height or width even if they may have them. It can have margin-top, margin-bottom, padding-top and padding-bottom but these will not make any changes, the values are just there for the sake of it, but they can come in handy if another child element inherits display from the current element.</li>
@@ -79,3 +79,6 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>Think of a display:inline-block element that has been rendered (or converted to an image) and then placed in the document inline.</li>
 <li>[Flexbox Notes](http://thesagittariusme.blogspot.com/search/label/flexbox)</li>
 <li>[Flexbox Examples](https://github.com/arjunkhode/Project-flexbox)</li>
+
+#3.Selectors
+Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS selectors.
