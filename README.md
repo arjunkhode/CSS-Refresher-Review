@@ -6,7 +6,7 @@ My review of [Vasanth's CSS refresher](https://github.com/vasanthk/css-refresher
 1. [Selectors](#3)
 1. [Repaint and Reflow](#4)
 1. [Responsive Images](#5)
-1. [Misc.](#6.Misc.)
+1. [Misc.](#6)
 
 # <a name="1">1.Position</a>
 
