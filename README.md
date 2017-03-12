@@ -89,17 +89,58 @@ Here is the summary of the game
 
 article.container{...} means this is an article that has a classname to it called container. 
 * .container div{...} means that all the divs inside class container will be selected. The subtle nuance between this and the previous example is that a space means think of "the preceding element has the succeeding element as its child" while the dot means think of "the succeeding element embodies the preceeding element". Also, the first example necessarily applies to child classes, classes that are inside the preceding element. The second example can have elements that are children of elements and need not be classes.
-* A  B
+* `A  B`
 Selects all B inside of A. B is called a descendant because it is inside of another element.
-* #id  A
+* `#id  A`
 You can combine any selector with the descendent selector.
-* A.className
+* `A.className`
 You can combine the class selector with other selectors, like the type selector.
-* A, B
+* `A, B`
 Selects all As and Bs
-* A  *
+* `A  *`
 This selects all elements inside of A.
-
+* `A + B`
+Selects only one B which is the immediate sibling of A.
+* `A ~ B`
+Selects all Bs that are siblings of A
+* `A > B `
+Selects one B that is the immediate child of A
+* `div p:first-child` 
+Selects all first child p elements that are in a div.
+* `ul li:only-child `
+Selects the only li element that are in a ul.
+* `ul li:last-child `
+Selects the last li elements inside of any ul
+* `div p:nth-child(2) `
+Selects the second p in every div
+* `:nth-last-child(2)` 
+Selects all second-to-last child elements.
+* `span:first-of-type` 
+Selects the first span in any element.
+* `.example:nth-of-type(odd) `
+Selects all odd instances of a the example class. 
+* `span:nth-of-type(6n+2) `
+Selects every 6th instance of a span, starting from (and including) the second instance.
+* `p span:only-of-type `
+Selects a span within any p if it is the only span in there.
+* `p span:last-of-type` 
+Selects the last span in every p
+* `div:empty` 
+Selects all empty div elements.
+* `:not(#fancy)` 
+Selects all elements that do not have id="fancy".
+* `div:not(:first-child)` 
+Selects every div that is not a first child.
+* `a[href] `
+Selects all a elements that have a href="anything" attribute
+* `a[href]` 
+Selects all a elements that have a href="anything" attribute.
+* `.toy[category^="Swim"]`
+Selects toy classes with categories that begins with Swim
+* `.toy[category$="Swim"]`
+Selects toy classes with categories that ends with Swim
+* `.toy[category*="Swim"]`
+Selects toy classes with categories that contain Swim
 
 #Selector efficiency
 
