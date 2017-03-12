@@ -1,8 +1,7 @@
 # CSS-Refresher-Review
 My review of [Vasanth's CSS refresher](https://github.com/vasanthk/css-refresher-notes) with examples.
-<ol>
 
-<li>Position
+#1.Position
 
 <ul>
 <li>
@@ -55,9 +54,7 @@ Position fixed also removes the element from the flow. Like position absolute, p
 [A good reference link not in Vasanth's refresher](http://blog.teamtreehouse.com/css-positioning)
 </li>
 
-</li>
-
-<li>Display
+#2.Display
 <li>Default value is inline</li>
 <li>Some elements are block in nature while some are inline</li>
 <li>An inline element can't use height or width even if they may have them. It can have margin-top, margin-bottom, padding-top and padding-bottom but these will not make any changes, the values are just there for the sake of it, but they can come in handy if another child element inherits display from the current element.</li>
@@ -83,10 +80,9 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>[Flexbox Notes](http://thesagittariusme.blogspot.com/search/label/flexbox)</li>
 <li>[Flexbox Examples](https://github.com/arjunkhode/Project-flexbox)</li>
 
-</li>
-
-<li>Selectors
+#3.Selectors
 Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS selectors.
+--------
 Here is the summary of the game
 
 * **The difference between dot between elements and space between elements in selectors**
@@ -130,8 +126,3 @@ attribute (a[rel=”external”])
 pseudo-class and pseudo element (a:hover, li:first)
 
 [Source](http://vanseodesign.com/css/css-selector-performance/)
-
-
-</li>
-=======
-
