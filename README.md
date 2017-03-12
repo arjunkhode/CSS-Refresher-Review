@@ -23,27 +23,6 @@ Relative position creates a coordinate system for its child elements.
 <li>
 Absolute position and fixed position removes the element from the normal flow. Each web-page has a default flow, which is like a set of rules. Like gravity affects a tower of building blocks, flow affects the building of HTML elements. Position relative makes an element like Clark Kent. It can defy the normal flow and move away from its original position, without disturbing the flow. Position relative does not push other elements. It just affects the z-index and causes overlap. Thus, it does not 'disturb the flow'. Any offsets will not cause elements around the box to be repositioned. [Working example](https://github.com/arjunkhode/CSS-Refresher-Review/blob/master/position-relative.html).
 </li>
-
-```
-<style>
-.box{
-	height:50px;
-	width: 50px;
-}
-.one{
-	background: lightcoral;
-	position: relative;
-	left: 25px;
-}
-.two{
-	background: mistyrose;
-}
-</style>
-<div class="box one">
-</div>
-<div class="box two">
-</div>
-```
 <li>
 Absolute position elements move within the coordinate system of their parent. If the parent does not have a coordinate system, the default coordinate system of the window is applied.
 </li>
@@ -72,17 +51,8 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>One example of a block element is 'div'. One example of an inline element is the anchor tag 'a'.</li>
 <li>Display none removes the element from the flow of the page, but the element still exists in the DOM. If you just want to make the element invisible but take up space, use visibility:hidden. Inversely, visibility:visible.</li>
 <li>By default (without setting a width) block elements take up as much horizontal space as they can. They take as much height by default as their children require.</li>
-<li>display:table can help add semantic value to the elements. Also this can help vertical alignment of children. To use it, you can just name corresponding display properties with the name of the kind of table element you are using</li>
-```
-<div style="display: table;">
-  <div style="display: table-row;">
-    <div style="display: table-cell;">
-      Gross but sometimes useful.
-    </div>
-  </div>
-</div>
-```
-[Reference: CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
+<li>display:table can help add semantic value to the elements. Also this can help vertical alignment of children. To use it, you can just name corresponding display properties with the name of the kind of table element you are using, like table-row, table-cell, etc.</li>
+[Reference](https://css-tricks.com/almanac/properties/d/display/)
 <li>Block level elements ignore vertical-align property.</li>
 <li>you can put any block element inside another block element. You can also put any inline element inside a block element, as well as any inline element inside any other inline element. But you cannot put a block element inside an inline element. [reference](https://www.impressivewebs.com/difference-block-inline-css/)</li>
 <li>Think of a display:inline-block element that has been rendered (or converted to an image) and then placed in the document inline.</li>
