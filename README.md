@@ -36,7 +36,7 @@ It doesn't affect other elements and the other elements don't affect it. It can 
 <li>
 Position fixed also removes the element from the flow. Like position absolute, position fixed can be used to stretch the element within the page. How fixed differs from absolute is that in position fixed, the parent is always the viewport and the coordinate system laid out is on top of the viewport. The top left corner of a position fixed element with top:0 and left:0, is the top left corner of the browser window
 
-[A good reference link not in Vasanth's refresher](http://blog.teamtreehouse.com/css-positioning)
+<a href="http://blog.teamtreehouse.com/css-positioning">A good reference link not in Vasanth's refresher</a>
 </li>
 </ul>
 
