@@ -81,6 +81,7 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>[Flexbox Notes](http://thesagittariusme.blogspot.com/search/label/flexbox)</li>
 <li>[Flexbox Examples](https://github.com/arjunkhode/Project-flexbox)</li>
 </ul>
+
 #3.Selectors
 Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS selectors.
 Here is the summary of the game
@@ -166,4 +167,32 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 * attribute (a[rel=”external”])
 * pseudo-class and pseudo element (a:hover, li:first)
 
-[Source](http://vanseodesign.com/css/css-selector-performance/)
+[Source: vanseodesign](http://vanseodesign.com/css/css-selector-performance/)
+
+#4.Repaint and Reflow
+* Repaint is expensive in terms of performance, as it requires the engine to search through all elements to determine what is visible, and what should be displayed.
+* This is even more expensive than repaint. It happens when an element is appended to the DOM, or browser window is resized. The browser has to compute the entire flow of elements again.
+
+* What causes a reflow
+
+	* Resizing a window.
+	* Changing the font.
+	* Adding or removing a stylesheet.
+	* Content changes, such as a user typing text in an input box.
+	* Activation of CSS pseudo classes such as :hover (In IE the activation of the pseudo class of a sibling).
+	* Manipulating the class attribute.
+	* A script manipulating the DOM
+	* Calculating offsetWidth and offsetHeight
+	* Setting a property of the style attribute.
+
+* How to minimize reflow
+
+#5.Responsive Images
+
+* Images will be responsive and scale up and down if the width property is set to 100%. A better option would be to set `max-width` property to 100% since the image will scale down if it has to, but never scale up to be larger than its original size.
+
+* Background images can also respond to resizing and scaling.
+
+* If the background-size property is set to "contain", the background image will scale, and try to fit the content area. However, the image will keep its aspect ratio
+* If the background-size property is set to "100% 100%", the background image will stretch to cover the entire content area.
+* If the background-size property is set to "cover", the background image will scale to cover the entire content area. The "cover" value keeps the aspect ratio, and some part of the background image may be clipped
