@@ -203,7 +203,7 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 * If the background-size property is set to "100% 100%", the background image will stretch to cover the entire content area.
 * If the background-size property is set to "cover", the background image will scale to cover the entire content area. The "cover" value keeps the aspect ratio, and some part of the background image may be clipped
 
-# 6.Misc.
+# <a name="6">6.Misc.</a>
 
 * If supplied, an optional third value for `box-shadow` defines the blur distance of the shadow. Only positive values are allowed, and the larger the value, the more the shadow’s edge is blurred.
 * To give a background to text, use `background: url(something); -webkit-background-clip:text; -webkit-text-fill-color:transparent;`. Note that the background clip statement should come after the background has been defined.
