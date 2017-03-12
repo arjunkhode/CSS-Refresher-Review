@@ -1,14 +1,14 @@
 # CSS-Refresher-Review
 My review of [Vasanth's CSS refresher](https://github.com/vasanthk/css-refresher-notes) with examples.
 # Table of Contents
-1. [Position](#1.Position)
+1. [Position](#1)
 1. 
 1. 
 1. 
 1. 
 1. [Misc.](#6.Misc.)
 
-# 1.Position
+# <a name="1">1.Position</a>
 
 <ul>
 <li>
