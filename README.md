@@ -2,10 +2,10 @@
 My review of [Vasanth's CSS refresher](https://github.com/vasanthk/css-refresher-notes) with examples.
 # Table of Contents
 1. [Position](#1)
-1. 
-1. 
-1. 
-1. 
+1. [Display](#2)
+1. [Selectors](#3)
+1. [Repaint and Reflow](#4)
+1. [Responsive Images](#5)
 1. [Misc.](#6.Misc.)
 
 # <a name="1">1.Position</a>
@@ -61,7 +61,8 @@ Position fixed also removes the element from the flow. Like position absolute, p
 [A good reference link not in Vasanth's refresher](http://blog.teamtreehouse.com/css-positioning)
 </li>
 </ul>
-# 2.Display
+
+#<a name="2"> 2.Display</a>
 <ul>
 <li>Default value is inline</li>
 <li>Some elements are block in nature while some are inline</li>
@@ -89,7 +90,7 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>[Flexbox Examples](https://github.com/arjunkhode/Project-flexbox)</li>
 </ul>
 
-#3.Selectors
+# <a name="3">3.Selectors</a>
 Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS selectors.
 Here is the summary of the game
 
@@ -176,7 +177,7 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 
 [Source: vanseodesign](http://vanseodesign.com/css/css-selector-performance/)
 
-# 4.Repaint and Reflow
+# <a name="4">4.Repaint and Reflow</a>
 * Repaint is expensive in terms of performance, as it requires the engine to search through all elements to determine what is visible, and what should be displayed.
 * This is even more expensive than repaint. It happens when an element is appended to the DOM, or browser window is resized. The browser has to compute the entire flow of elements again.
 
@@ -192,7 +193,7 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 	* Calculating offsetWidth and offsetHeight
 	* Setting a property of the style attribute.
 
-# 5.Responsive Images
+# <a name="5">5.Responsive Images</a>
 
 * Images will be responsive and scale up and down if the width property is set to 100%. A better option would be to set `max-width` property to 100% since the image will scale down if it has to, but never scale up to be larger than its original size.
 
