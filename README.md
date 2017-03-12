@@ -99,8 +99,7 @@ Selects all As and Bs
 * A  *
 This selects all elements inside of A.
 
---------
-*Selector efficiency
+#Selector efficiency
 
 ```
 div.nav > ul li a[title]
