@@ -86,10 +86,20 @@ Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS 
 #Here is the summary of the game
 
 * **The difference between dot between elements and space between elements in selectors**
-article.container{...} means that the .container class is an article or in other words, is enclosed in an article. Note that this is a one to one relationship. Although it will select all articles and container class inside those articles, and all container classes inside article, it mainly highlights the fact that we are applying this rule to _each_ container that embodies article.
-* .container div{...} means that all the divs inside class container will be selected. The subtle nuance between this and the previous example is that a space means think of "preceding element has succeeding element as its child" while the dot means think of "the succeeding element embodies the preceeding element". Also, the first example necessarily applies to child classes, classes that are inside the preceding element. The second example can have elements that are children of elements and need not be classes.
+article.container{...} means this is an article with a classname container. 
+* .container div{...} means that all the divs inside class container will be selected. The subtle nuance between this and the previous example is that a space means think of "the preceding element has the succeeding element as its child" while the dot means think of "the succeeding element embodies the preceeding element". Also, the first example necessarily applies to child classes, classes that are inside the preceding element. The second example can have elements that are children of elements and need not be classes.
 
-*
+* A  B
+Selects all B inside of A. B is called a descendant because it is inside of another element.
+* #id  A
+You can combine any selector with the descendent selector.
+* A.className
+You can combine the class selector with other selectors, like the type selector.
+* A, B
+Selects all As and Bs
+* A  *
+This selects all elements inside of A.
+
 --------
 * Selector efficiency
 
