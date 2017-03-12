@@ -53,8 +53,9 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>
 [A good reference link not in Vasanth's refresher](http://blog.teamtreehouse.com/css-positioning)
 </li>
-
+</ul>
 # 2.Display
+<ul>
 <li>Default value is inline</li>
 <li>Some elements are block in nature while some are inline</li>
 <li>An inline element can't use height or width even if they may have them. It can have margin-top, margin-bottom, padding-top and padding-bottom but these will not make any changes, the values are just there for the sake of it, but they can come in handy if another child element inherits display from the current element.</li>
@@ -79,10 +80,11 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>Think of a display:inline-block element that has been rendered (or converted to an image) and then placed in the document inline.</li>
 <li>[Flexbox Notes](http://thesagittariusme.blogspot.com/search/label/flexbox)</li>
 <li>[Flexbox Examples](https://github.com/arjunkhode/Project-flexbox)</li>
-
+</ul>
 #3.Selectors
 Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS selectors.
 Here is the summary of the game
+<ul>
 * **The difference between dot between elements and space between elements in selectors**
 
 article.container{...} means this is an article that has a classname to it called container. 
@@ -98,6 +100,8 @@ Selects all As and Bs
 * A  *
 This selects all elements inside of A.
 
+</ul>
+
 #Selector efficiency
 
 ```
@@ -112,14 +116,14 @@ The sooner browsers can filter out a mismatch, the less they have to check and, 
 
 Below is the order of efficiency for selectors. IDs are the most efficient and pseudo classes and pseudo elements are the least efficient.
 
-id (#myid)
-class (.myclass)
-tag (div, h1, p)
-adjacent sibling (h1 + p)
-child (ul > li)
-descendent (li a)
-universal (*)
-attribute (a[rel=”external”])
-pseudo-class and pseudo element (a:hover, li:first)
+* id (#myid)
+* class (.myclass)
+* tag (div, h1, p)
+* adjacent sibling (h1 + p)
+* child (ul > li)
+* descendent (li a)
+* universal (*)
+* attribute (a[rel=”external”])
+* pseudo-class and pseudo element (a:hover, li:first)
 
 [Source](http://vanseodesign.com/css/css-selector-performance/)
