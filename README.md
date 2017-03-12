@@ -51,12 +51,12 @@ Position fixed also removes the element from the flow. Like position absolute, p
 <li>Display none removes the element from the flow of the page, but the element still exists in the DOM. If you just want to make the element invisible but take up space, use visibility:hidden. Inversely, visibility:visible.</li>
 <li>By default (without setting a width) block elements take up as much horizontal space as they can. They take as much height by default as their children require.</li>
 <li>display:table can help add semantic value to the elements. Also this can help vertical alignment of children. To use it, you can just name corresponding display properties with the name of the kind of table element you are using, like table-row, table-cell, etc.</li>
-[Reference](https://css-tricks.com/almanac/properties/d/display/)
+<a href="https://css-tricks.com/almanac/properties/d/display/">Reference</a>
 <li>Block level elements ignore vertical-align property.</li>
-<li>you can put any block element inside another block element. You can also put any inline element inside a block element, as well as any inline element inside any other inline element. But you cannot put a block element inside an inline element. [reference](https://www.impressivewebs.com/difference-block-inline-css/)</li>
+<li>you can put any block element inside another block element. You can also put any inline element inside a block element, as well as any inline element inside any other inline element. But you cannot put a block element inside an inline element. <a href="https://www.impressivewebs.com/difference-block-inline-css/">reference</a></li>
 <li>Think of a display:inline-block element that has been rendered (or converted to an image) and then placed in the document inline.</li>
-<li>[Flexbox Notes](http://thesagittariusme.blogspot.com/search/label/flexbox)</li>
-<li>[Flexbox Examples](https://github.com/arjunkhode/Project-flexbox)</li>
+<li><a href="http://thesagittariusme.blogspot.com/search/label/flexbox">Flexbox Notes</a></li>
+<li><a href="https://github.com/arjunkhode/Project-flexbox">Flexbox Examples</a></li>
 </ul>
 
 # <a name="3">3.Selectors</a>
