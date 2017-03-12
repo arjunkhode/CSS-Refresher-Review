@@ -85,6 +85,7 @@ Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS 
 --------
 Here is the summary of the game
 * **The difference between dot between elements and space between elements in selectors**
+
 article.container{...} means this is an article that has a classname to it called container. 
 * .container div{...} means that all the divs inside class container will be selected. The subtle nuance between this and the previous example is that a space means think of "the preceding element has the succeeding element as its child" while the dot means think of "the succeeding element embodies the preceeding element". Also, the first example necessarily applies to child classes, classes that are inside the preceding element. The second example can have elements that are children of elements and need not be classes.
 * A  B
