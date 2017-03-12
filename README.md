@@ -82,3 +82,30 @@ Position fixed also removes the element from the flow. Like position absolute, p
 
 #3.Selectors
 Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS selectors.
+
+--------
+* Selector efficiency
+
+```
+div.nav > ul li a[title]
+
+```
+A browser seeing the above selector will first try to match a[title] in the html, and then proceed to the left matching li, ul, and finally div.nav.
+
+This last part of the selector (in this case a[title]) is called the “key selector” and it’s ultimately what will determine how efficient your selector will be.
+
+The sooner browsers can filter out a mismatch, the less they have to check and, the more efficient the selector.
+
+Below is the order of efficiency for selectors. IDs are the most efficient and pseudo classes and pseudo elements are the least efficient.
+
+id (#myid)
+class (.myclass)
+tag (div, h1, p)
+adjacent sibling (h1 + p)
+child (ul > li)
+descendent (li a)
+universal (*)
+attribute (a[rel=”external”])
+pseudo-class and pseudo element (a:hover, li:first)
+
+[Source](http://vanseodesign.com/css/css-selector-performance/)
