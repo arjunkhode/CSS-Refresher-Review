@@ -169,7 +169,7 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 
 [Source: vanseodesign](http://vanseodesign.com/css/css-selector-performance/)
 
-#4.Repaint and Reflow
+# 4.Repaint and Reflow
 * Repaint is expensive in terms of performance, as it requires the engine to search through all elements to determine what is visible, and what should be displayed.
 * This is even more expensive than repaint. It happens when an element is appended to the DOM, or browser window is resized. The browser has to compute the entire flow of elements again.
 
@@ -187,7 +187,7 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 
 * How to minimize reflow
 
-#5.Responsive Images
+# 5.Responsive Images
 
 * Images will be responsive and scale up and down if the width property is set to 100%. A better option would be to set `max-width` property to 100% since the image will scale down if it has to, but never scale up to be larger than its original size.
 
@@ -196,3 +196,10 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 * If the background-size property is set to "contain", the background image will scale, and try to fit the content area. However, the image will keep its aspect ratio
 * If the background-size property is set to "100% 100%", the background image will stretch to cover the entire content area.
 * If the background-size property is set to "cover", the background image will scale to cover the entire content area. The "cover" value keeps the aspect ratio, and some part of the background image may be clipped
+
+# 6.Misc.
+
+* If supplied, an optional third value for `box-shadow` defines the blur distance of the shadow. Only positive values are allowed, and the larger the value, the more the shadow’s edge is blurred.
+* To give a background to text, use `background: url(something); -webkit-background-clip:text; -webkit-text-fill-color:transparent;`. Note that the background clip statement should come after the background has been defined.
+* Setting the viewport: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+* For devices smaller than 400px: `@media only screen and (min-device-width: 400px) {...}`
