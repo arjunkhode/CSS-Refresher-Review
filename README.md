@@ -82,7 +82,6 @@ Position fixed also removes the element from the flow. Like position absolute, p
 
 #3.Selectors
 Play the game [flukeout](https://flukeout.github.io) to get the most out of CSS selectors.
---------
 Here is the summary of the game
 * **The difference between dot between elements and space between elements in selectors**
 
