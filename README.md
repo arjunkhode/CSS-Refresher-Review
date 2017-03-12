@@ -185,8 +185,6 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 	* Calculating offsetWidth and offsetHeight
 	* Setting a property of the style attribute.
 
-* How to minimize reflow
-
 # 5.Responsive Images
 
 * Images will be responsive and scale up and down if the width property is set to 100%. A better option would be to set `max-width` property to 100% since the image will scale down if it has to, but never scale up to be larger than its original size.
