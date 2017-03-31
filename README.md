@@ -177,3 +177,20 @@ Below is the order of efficiency for selectors. IDs are the most efficient and p
 * To give a background to text, use `background: url(something); -webkit-background-clip:text; -webkit-text-fill-color:transparent;`. Note that the background clip statement should come after the background has been defined.
 * Setting the viewport: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 * For devices smaller than 400px: `@media only screen and (min-device-width: 400px) {...}`
+
+# Animation
+
+```
+@keyframes rotating{
+	from{
+	transform: rotate(0deg);
+	}
+	to{
+	transform: rotate(360deg);
+	}
+}
+
+.element{
+animation: rotating 2s linear infinite;
+}
+```
